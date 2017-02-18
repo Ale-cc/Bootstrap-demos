@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="utf-8">
+	<title>警告框</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="alert alert-success" role="alert">Hello Bootstrap!</div>
+	<div class="alert alert-info" role="alert">Hello Bootstrap!</div>
+	<div class="alert alert-warning" role="alert">Hello Bootstrap!</div>
+	<div class="alert alert-danger" role="alert">Hello Bootstrap!</div>
+
+	<!-- 可关闭的警告框 -->
+	<div class="alert alert-warning" role="alert">
+		<button class="close" type="button" data-dismiss="alert">
+			<span aria-disabled="true">&times;</span>
+		</button>
+		更多详情请访问
+		<a href="http://v3.bootcss.com/components/#pagination" class="alert-link">Bootstrap中文网站</a>
+	</div>
+
+	<div class="alert alert-success" role="alert">
+		<button class="close" type="button" data-dismiss="alert">
+			<span aria-disabled="true">&times;</span>
+		</button>
+		更多详情请访问
+		<a href="http://v3.bootcss.com/components/#pagination" class="alert-link">Bootstrap中文网站</a>
+	</div>
+
+	<div class="alert alert-info" role="alert">
+		<button class="close" type="button" data-dismiss="alert">
+			<span aria-disabled="true">&times;</span>
+		</button>
+		更多详情请访问
+		<a href="http://v3.bootcss.com/components/#pagination" class="alert-link">Bootstrap中文网站</a>
+	</div>
+
+	<div class="alert alert-danger" role="alert">
+		<button class="close" type="button" data-dismiss="alert">
+			<span aria-disabled="true">&times;</span>
+		</button>
+		更多详情请访问
+		<a href="http://v3.bootcss.com/components/#pagination" class="alert-link">Bootstrap中文网站</a>
+	</div>
+
+</div><!-- container ended -->
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$("#mylist a").click(function(e){
+		e.preventDefault();
+		$(this).tab("show");
+	})
+</script>	
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="utf-8">
+	<title>Bootstrap CSS组件--输入框</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<style>
+		.row{
+			margin-bottom:15px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="input-group input-group-lg">
+		<span class="input-group-addon" id="basic-addon1">@</span>
+		<input type="text" class="form-control" placeholder="UserName" aria-describedby="basic-addon1">
+	</div>
+	
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="UserName"/>
+		<span class="input-group-addon" id="basic-addon2">.00</span>
+	</div>
+
+	<div class="input-group input-group-sm">
+		<span class="input-group-addon glyphicon glyphicon-envelope" ></span>
+		<input type="text"  class="form-control"placeholder="UserName" />
+		<span class="input-group-addon">@example.com</span>
+	</div>
+	<div class="input-group col-sm-4 col-sm-offset-4">
+		<span class="input-group-addon glyphicon glyphicon-envelope" ></span>
+		<input type="text"  class="form-control" placeholder="UserName" />
+		<span class="input-group-addon">@example.com</span>
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<input type="checkbox">
+				</span>
+				<input type="text" class="form-control" placeholder="多选">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<input type="radio" name="optoionsRadios">
+				</span>
+				<input type="text"  class="form-control" placeholder="男">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-4">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<input type="radio" name="optoionsRadios">
+				</span>
+				<input type="text"  class="form-control" placeholder="女">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="input-group">
+				<input type="text" class="form-control">
+				<span class="input-group-btn">
+					<button class="btn btn-default " type="button">Search</button>
+				</span>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-8">
+			<div class="input-group">
+				<div class="input-group-btn">
+				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">搜索选项 <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="">DropMenu1</a></li>
+					<li><a href="">DropMenu2</a></li>
+					<li><a href="">DropMenu3</a></li>
+					<li><a href="">DropMenu4</a></li>
+					<li><a href="">DropMenu5</a></li>
+				</ul>
+			</div>
+				<input type="text" class="form-control col-lg-6" placeholder="Hello">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="input-group">
+				<div class="input-group-btn">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">DropMenu</button>
+					<ul class="dropdown-menu" role="menu">
+					<li><a href="">DropMenu1</a></li>
+					<li><a href="">DropMenu2</a></li>
+					<li><a href="">DropMenu3</a></li>
+					<li><a href="">DropMenu4</a></li>
+					<li><a href="">DropMenu5</a></li>
+				</ul>				
+				</div>
+				<input type="text" class="form-control col-lg-6" placeholder="TexeArea">
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

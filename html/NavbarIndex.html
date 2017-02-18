@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+	<meta charset="utf-8">
+	<title>Bootstrap导航栏的创建及使用</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		.container{
+			margin-bottom:15px;
+		}
+	</style>
+</head>
+<body>
+<div class="container"> <!--  nav-tabs横向标签 -->
+	<ul id="mytabs" class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="">About</a></li>
+		<li role="presentation"><a href="">Experience</a></li>
+		<li role="presentation"><a href="">Project</a></li>
+		<li role="presentation"><a href="">Contact</a></li>
+	</ul>
+</div>
+<!-- 不可点击：给li标签声明一个类disabled -->
+<div class="container"> <!--  nav-tabs横向胶囊标签 -->
+	<ul id="mytabs" class="nav nav-pills" role="tablist">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="">About</a></li>
+		<li role="presentation"><a href="">Experience</a></li>
+		<li role="presentation"><a href="">Project</a></li>
+		<li role="presentation"><a href="">Contact</a></li>
+	</ul>
+</div>
+<div class="container col-sm-6"><!--  nav-tabs纵向标签 -->
+	<ul id="mytabs" class="nav nav-stacked" role="tablist">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="">About</a></li>
+		<li role="presentation"><a href="">Experience</a></li>
+		<li role="presentation"><a href="">Project</a></li>
+		<li role="presentation" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Contact
+		<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu" role="menu">
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello1</a></li>
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello2</a></li>
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello3</a></li>
+		</ul>
+		</li>
+	</ul>
+</div>
+<div class="container col-sm-6"><!--  nav-tabs纵向胶囊标签 -->
+	<ul id="mytabs" class="nav nav-stacked nav-pills" role="tablist">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="">About</a></li>
+		<li role="presentation"><a href="">Experience</a></li>
+		<li role="presentation"><a href="">Project</a></li>
+		<li role="presentation"><a href="">Contact</a></li>
+	</ul>
+</div>
+<div class="container "><!-- 充满屏幕的两端对齐 -->
+	<ul id="mytabs" class="nav nav-tabs nav-justified" role="tablist">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="">About</a></li>
+		<li role="presentation"><a href="">Experience</a></li>
+		<li role="presentation"><a href="">Project</a></li>
+		<li role="presentation" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Contact
+		<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu" role="menu">
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello1</a></li>
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello2</a></li>
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello3</a></li>
+		</ul>
+		</li>
+	</ul>
+</div>
+<div class="container "><!-- 充满屏幕的两端对齐 -->
+	<ul id="mytabs" class="nav nav-pills nav-justified" role="tablist">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="">About</a></li>
+		<li role="presentation"><a href="">Experience</a></li>
+		<li role="presentation"><a href="">Project</a></li>
+		<li role="presentation" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Contact
+		<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu" role="menu">
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello1</a></li>
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello2</a></li>
+			<li role="presentation"><a href="" role="menuitem" tabindex="-1">Hello3</a></li>
+		</ul>
+		</li>
+	</ul>
+</div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$("#mytabs a").click(function(e){
+		e.preventDefault();
+		$(this).tab("show");
+	})
+</script>
+</body>
+</html>

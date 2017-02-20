@@ -1,0 +1,88 @@
+h1,h3,p,a,button{
+	font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+}
+.onepage{
+	height:750px;
+}
+.onepage-bg{
+	height:780px;
+	width:100%;
+	position:absolute;
+	background-position:center center;/*水平、垂直居中*/
+	background-size:cover; /*不失真*/
+}
+#onepagebg{
+	background-image:url("../image/face.jpg");
+}
+#mytabs a,#mytabright a,#myLogo a{
+	color:#666;
+}
+.container-fluid{
+	margin-top:20px;
+}
+
+.head1content{
+	margin-top: 315px;
+	line-height:75px;
+}
+.title-text{
+	margin-left:65px;
+}
+.headfontsize{
+	padding-left: 75px;
+	
+}
+.headfontsize h1{
+	font-size:30pt;
+	color:#666;
+	font-family:"Helvetica";
+}
+.headfontsize h4{
+	margin-top:-10px;
+	padding-left: 5px;
+	font-size:16px;
+	color:#777;
+}
+.headfontsize p{
+	margin-top: 30px;
+	padding-left: 5px;
+}
+#btnFont{
+	font-family:"Microsoft Yahei";
+}
+.twopage{
+	margin-top:100px;
+	height:750px;
+}
+.twopage-text{
+	width:100%;
+	text-align:center;
+}
+.twopage-text-h1{
+	/*margin-left:120px;*/
+	letter-spacing:2px;
+	margin: 80px 0 30px 120px;
+	padding:20px 0 0 0;	
+}
+.twopage-text-h1 img{
+	width:150px;
+	margin-top:-20px;
+}
+.twopage .row{
+	margin-right:0px;
+	margin-left:0px;
+}
+.twopage-content{
+	float:left;
+	background: #fff;
+	padding:0 2px 2px 0;
+	position:relative;
+	overflow: hidden;
+}
+.twopage-content >a{
+	width: 100%;
+	height: 100%;
+	float:left;
+	text-align: center;
+	position: relative;
+}

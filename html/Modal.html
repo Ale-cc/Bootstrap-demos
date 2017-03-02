@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="utf-8">
+	<title>警告框</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<!-- <p>One fine body&hellip;</p> -->
+					<h4>模态框：静态实例</h4>
+					<p>以下模态框包含了模态框的头、体和一组放置于底部的按钮。</p>
+				</div>
+				<div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button">save changes</button></div>
+			</div><!-- modal-content ended -->
+		</div><!-- modal-dialog ended -->
+	</div><!-- modal ended -->
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	// $("#myModal").modal("show");
+	//载入浏览器就启动模态框
+</script>	
+</body>
+</html>

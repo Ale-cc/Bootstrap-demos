@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="utf-8">
+	<title>scroll滚动监听</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse js-navbar-scrollyspy" id="myScrolls">
+				<ul class="nav navbar-nav">
+					<li><a href="#Item1">罗曼·罗兰</a></li>
+					<li><a href="#Item2">北京爱情故事</a></li>
+					<li><a href="#Item3">平凡的世界</a></li>
+					<li><a href="#Item4">路遥</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#one" tabindex="-1">one</a></li>
+							<li><a href="#two" tabindex="-1">two</a></li>
+							<li><a href="#three" tabindex="-1">three</a></li>
+							<li><a href="#four" tabindex="-1">four</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<hr>
+	<div class="container">
+		<h2 id="Item1">罗曼·罗兰 名言警句</h2>
+		<p>大部分人在二三十岁上就死去了，因为过了这个年龄，他们只是自己的影子，此后的余生则是在模仿自己中度过，日复一日，更机械，更装腔作势地重复他们在有生之年的所作所为，所思所想，所爱所恨。—— 罗曼·罗兰</p>
+		<img src="image/50.jpg" alt="" class="img-responsive">
+	</div>
+	<hr>
+	<div class="container">
+		<h2 id="Item2">北京爱情故事<span class="badge">hot</span></h2>
+		<p>你不主动，我不主动，然后我们的关系就慢慢消失了，人与人之间没有谁离不开谁，只有谁不珍惜谁，一个转身，二个世界。一生之中有一个爱你，疼你，牵挂你的人，这就是幸福。万人追不如一人疼，万人宠不如一人懂。世界上不是所有人都可以掏心掏肺互诉衷肠。路过的都是缘，擦肩而过的都是客。
+——陈思成</p>
+		<img src="image/11.jpg" alt="" class="img-responsive">
+	</div>
+	<hr>
+	<div class="container">
+		<h2 id="Item3">平凡的世界</h2>
+		<p>生活不能等待别人来安排，要自己去争取和奋斗；而不论其结果是喜是悲，但可以慰藉的是，你总不枉在这世界上活了一场。有了这样的认识，你就会珍重生活，而不会玩世不恭；同时，也会给人自身注入一种强大的内在力量。——  路遥</p>
+		<img src="image/47.jpg" alt="" class="img-responsive">
+	</div>
+	<hr>
+	<div class="container">
+		<h2 id="Item4">平凡的世界</h2>
+		<p>他站在山顶上，久久地望着县城的方向，面对黄昏中连绵不断的群山，热泪在他脸颊上无声地流淌着。原谅我吧 润叶，我将要远去他乡去寻找一个陌生的姑娘。别了 我亲爱的。</p>
+		<img src="image/14.jpg" alt="" class="img-responsive">
+	</div>
+
+	<hr>
+
+	<div id="one">
+		<h3>经典电影台词1</h3>
+		<p>我曾经听人说过，当你不可以再拥有的时候。你唯一可以做的，就是让自己不要忘记。——王家卫《东邪西毒》</p>
+		<img src="image/3.jpg" alt="" class="img-responsive">
+	</div>
+	<hr>
+	<div id="two">
+		<h3>经典电影台词2</h3>
+		<p>我曾经听人说过，当你不可以再拥有的时候。你唯一可以做的，就是让自己不要忘记。——王家卫《东邪西毒》</p>
+		<img src="image/05.jpg" alt="" class="img-responsive">
+	</div>
+	<hr>
+	<div id="three">
+		<h3>经典电影台词3</h3>
+		<p>我曾经听人说过，当你不可以再拥有的时候。你唯一可以做的，就是让自己不要忘记。——王家卫《东邪西毒》</p>
+		<img src="image/47.jpg" alt="" class="img-responsive">
+	</div>
+	<hr>
+	<div id="four">
+		<h3>经典电影台词4</h3>
+		<p>我曾经听人说过，当你不可以再拥有的时候。你唯一可以做的，就是让自己不要忘记。——王家卫《东邪西毒》</p>
+		<img src="image/11.jpg" alt="" class="img-responsive">
+	</div>
+</div>
+
+
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	// 事件监听
+	// $("#myScrolls").on("activate.bs.scrollspy",function(e){
+	// 	alert("Hello Bootstrap!");
+	// })
+</script>	
+</body>
+</html>

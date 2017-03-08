@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Bootstrap Collapse</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<a href="#collapseExample" class="btn btn-primary" data-toggle="collapse">点击显示</a>
+		<div class="collapse" id="collapseExample">
+			<div class="well">人是环境的反应器。微博像是一个环境，但它不会主动刺激人，所以是个伪环境。到微博看东西是不人性的，哪有到环境里逛逛再决定做什么的，那不叫反应。而是当环境发生了点什么事情刺激到人了，人做出的行动才叫反应。所以，微博之后，将是推送。2012-03-05 02:44</div>
+		</div>
+
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> Button with data-target</button>
+		<div class="collapse" id="collapseExample">
+			<div class="well">人是环境的反应器。微博像是一个环境，但它不会主动刺激人，所以是个伪环境。到微博看东西是不人性的，哪有到环境里逛逛再决定做什么的，那不叫反应。而是当环境发生了点什么事情刺激到人了，人做出的行动才叫反应。所以，微博之后，将是推送。2012-03-05 02:44</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div id="headingOne" class="panel-heading" role="tab">
+				<h4 class="pannel-title"><a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">新闻标题1</a></h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+				<div class="panel-body">(用于承载重要但又不能省略的内容)<br>人是环境的反应器。微博像是一个环境，但它不会主动刺激人，所以是个伪环境。到微博看东西是不人性的，哪有到环境里逛逛再决定做什么的，那不叫反应。而是当环境发生了点什么事情刺激到人了，人做出的行动才叫反应。所以，微博之后，将是推送。2012-03-05 02:44</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div id="headingTwo" class="panel-heading" role="tab">
+				<h4 class="pannel-title"><a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">新闻标题2</a></h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpane1">
+				<div class="panel-body">(用于承载重要但又不能省略的内容)<br>人是环境的反应器。微博像是一个环境，但它不会主动刺激人，所以是个伪环境。到微博看东西是不人性的，哪有到环境里逛逛再决定做什么的，那不叫反应。而是当环境发生了点什么事情刺激到人了，人做出的行动才叫反应。所以，微博之后，将是推送。2012-03-05 02:44</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div id="headingThree" class="panel-heading" role="tab">
+				<h4 class="pannel-title"><a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">新闻标题3</a></h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpane1">
+				<div class="panel-body">(用于承载重要但又不能省略的内容) <br>人是环境的反应器。微博像是一个环境，但它不会主动刺激人，所以是个伪环境。到微博看东西是不人性的，哪有到环境里逛逛再决定做什么的，那不叫反应。而是当环境发生了点什么事情刺激到人了，人做出的行动才叫反应。所以，微博之后，将是推送。2012-03-05 02:44</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

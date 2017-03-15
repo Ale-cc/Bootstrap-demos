@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/**
+ * 锋利的jQuery 练习css
+ * @authors Your Name (you@example.org)
+ * @date    2016-10-29 11:35:59
+ * @version $Id$
+ */
+div,span,p{
+	width: 140px;
+	height:140px;
+	margin:5px;
+	background: #009999;
+	float:left;
+	font-size: 18px;
+	color:#fefefe;
+	font-family: verdana;
+	border:1px solid #006666;
+}
+
+div.mini{
+	width: 55px;
+	height:55px;
+	background: #00CC99;
+	font-size: 12px;
+    line-height: 1.25;
+}
+div.hide{
+	display: none;
+}
+
+a{
+	display: block;
+	position: relative;
+	width:20%;
+	float: left;
+	margin:0 auto;
+	text-align:center;
+	box-sizing: border-box;
+}
+a img,a span.title{
+	display:block;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}

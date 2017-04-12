@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>导航条的使用</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+<body>
+<nav class="navbar navbar-inverse " role="navigation"> 
+<!-- navbar-fixed-top/bottom 导航栏固定顶部、底部 navbar-inverse导航栏背景黑色 navbar-default则为白色 -->
+	<div class="container-fluid">
+		<div class="navbar-header"> <!-- logo部分 -->
+			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-road"></span>Think Different</a>
+		</div>	
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav" id="mytabs"> <!-- 导航栏选项卡 -->
+				<li class="active"><a href="">NavItem1</a></li>
+				<li><a href="">NavItem2</a></li>
+				<li><a href="">NavItem3</a></li>
+				<li><a href="">NavItem4</a></li>
+				<li><a href="">NavItem5</a></li>
+			</ul>
+
+			<form action="" class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="搜索">
+				</div>
+				<button type="submit" class="btn btn-default">搜索</button>
+			</form>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="">Link</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Language<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="">language1</a></li>
+						<li><a href="">language2</a></li>
+						<li><a href="">language3</a></li>
+						<li><a href="">language4</a></li>
+						<li><a href="">language5</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- collapse ended -->
+	</div><!-- container-fluid ended -->
+</nav>
+
+<!-- 路径导航 常见于文档之中-->
+<nav class="navbar navbar-default col-sm-4" role="navigation">
+	<ol class="breadcrumb">艾尔为您报时：
+		<li><a href="">2016年</a></li>
+		<li><a href="">1月</a></li>
+		<li><a href="">27日</a></li>
+		<li><a href="">22:09</a></li>
+	</ol>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+	<ol class="breadcrumb">
+		<li><a href="">Home</a></li>
+		<li><a href="">Library</a></li>
+		<li><a href="">Science</a></li>
+		<li><a href="">Computer</a></li>
+	</ol>
+</nav>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$("#mytabs a").click(function(e){
+		e.preventDefault();
+		$(this).tab("show");
+	})
+</script>
+</body>
+</html>

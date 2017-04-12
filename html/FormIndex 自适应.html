@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>z自适应表单</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<!-- form.form-horizontal[role="form"]>div.form-group>label.col-sm-2.control-label{Email}+div.col-sm-10>input:email[placeholder="Email"] -->
+<form action="" class="form-horizontal" role="form">
+	<div class="form-group">
+		<label for="" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" name="" id="" placeholder="Email" class="form-control">
+		</div>
+	</div>
+
+	<!-- div.form-group>label.col-sm-2.control-label{password}+div.col-sm-10>input:password[placeholder="password"] -->
+	<div class="form-group">
+		<label for="" class="col-sm-2 control-label">password</label>
+		<div class="col-sm-10">
+			<input type="password" name="" id="" placeholder="password" class="form-control">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<div class="checkbox">
+				<label for="">
+					<input type="checkbox" name="" id="">记住密码
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+		<button type="submit" class="btn btn-default">登陆</button></div>
+	</div>
+</form>
+<form action="" role="form">
+<p class="col-sm-10 col-sm-offset-2">文本框：</p>
+	<input type="text"  class="form-control col-sm-10 col-sm-offset-2">
+	<p class="col-sm-10 col-sm-offset-2">文本域：</p>
+	<textarea rows="5" class="form-control col-sm-10 col-sm-offset-2">Hello</textarea>
+
+	<div class="checkbox">
+	<p class="col-sm-10 col-sm-offset-2">复选：</p>
+		<label for="" class="col-sm-10 col-sm-offset-2">
+			<input type="checkbox" name="" id="">音乐
+		</label>
+	</div>
+	<div class="checkbox">
+		<label for="" class="col-sm-10 col-sm-offset-2">
+			<input type="checkbox" name="" id="">绘画
+		</label>
+	</div>
+
+	<div class="radio">
+	<p class="col-sm-10 col-sm-offset-2">单选：</p>
+		<label for="" class="col-sm-10 col-sm-offset-2">
+			<input type="radio" name="optoionsRadios" id="" checked>男</input>
+		</label>
+	</div>
+	<div class="radio">
+		<label for="" class="col-sm-10 col-sm-offset-2">
+			<input type="radio" name="optoionsRadios" id="" >女</input>
+		</label>
+	</div>
+	<p class="form-contorl-static col-sm-4 col-sm-offset-2">请选择月份:</p>
+	<select name="" id="" class="form-control col-sm-4 col-sm-offset-2">
+		<option value="">1月</option>
+		<option value="">2月</option>
+		<option value="">3月</option>
+		<option value="">4月</option>
+		<option value="">5月</option>
+		<option value="">6月</option>
+		<option value="">7月</option>
+		<option value="">8月</option>
+		<option value="">9月</option>
+		<option value="">10月</option>
+		<option value="">11月</option>
+		<option value="">12月</option>
+	</select>
+	<p class="form-contorl-static col-sm-4 col-sm-offset-2">请按照我的格式输入:hello@163.com</p>	
+<!-- 	<input type="text"  class="col-sm-4 col-sm-offset-2" placeholder="hello Bootstrap!">
+ -->	
+
+</form>
+<!-- <form action="" role="form">
+	
+	<div class="has-warning">
+		<label for=""></label>
+		<input type="text" class="col-sm-10 col-sm-offset-2" placeholder="hello CC!">
+	</div>
+	<div class="has-success">
+		<label for=""></label>
+		<input type="text" class="col-sm-10 col-sm-offset-2" placeholder="hello Ale!">
+	</div>
+	<div class="has-error">
+		<label for=""></label>
+		<input type="text" class="col-sm-10 col-sm-offset-2" placeholder="hello Ale CC!">
+	</div>
+	
+	
+</form> -->
+<!-- <fieldset disabled>
+	<form action="" class="form-control col-sm-10 col-sm-offset-2">
+		<div class="col-sm-2 col-sm-offset-2">
+		<label for=""></label>
+		<input type="text" class="col-sm-4" name="" id="" placeholder="hello world!" readonly>
+		</div>
+	</form>
+</fieldset> -->
+	<!-- span元素可以承载元素的图片 -->
+</body>
+</html>

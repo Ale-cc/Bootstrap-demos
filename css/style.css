@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors 吴结元 (jieyuanwu2009@qq.com)
+ * @date    2016-04-07 13:57:46
+ * @version $1.01$
+ */
+ /*div{
+ 	width: 50px;
+ 	height:50px;
+ 	float: left;
+ 	margin:2px;
+ 	background:#99cc99;
+ }*/
+.box1{
+	width: 300px;
+	height: 300px;
+	background-color: #3590D4;
+}
+#div1,#div2,#div3{
+	width:80px;
+	height:80px;
+	margin:1px;
+	display: none;
+}
+#div1{
+	background-color: #ffff99;
+}
+#div2{
+	background-color: #99cc99;
+}
+#div3{
+	background-color: #666600;
+}
+#content,#flipshow{
+	padding:5px;
+	text-align: center;
+}

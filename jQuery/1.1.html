@@ -15,43 +15,43 @@
 <!--<script src="js/app.js"></script>-->
 </head>
 <body>
-<div class="container">
-	<p class="">Hello World!</p>
-	<p class="para2">Hello JQuery!</p>
-	<p class="">Hello JQuery!</p>
-	<button class="btn btn-default">click me</button>
-</div>
-<script>
-	// create by jieyuanwu2009@qq.com 0n 16/4/07
-// 1.1 点击隐藏全部p元素
-$(document).ready(function(){
-	//alert("文档加载完毕！");
-	$("p").click(function(){
-		$(this).hide();
-	})
-});
-// 1.2 点击隐藏某个p元素
-$(document).ready(function(){
-	$('button').click(function(){
-		$('.para2').text('p元素被修改了！');
-	});
-});
-// 2.1 常用事件-点击事件
-$(document).ready(function(){
-	//alert("gggg");
-	// $('button').click(function(){
-	// 	$(this).hide();
-	// });
-	// $('button').dblclick(function(){
-	// 	$(this).hide();
-	// });
-	// $('button').mouseenter(function(){
-	// 	$(this).hide();
-	// });
-	// $('button').mouseleave(function(){
-	// 	$(this).hide();
-	// });
-});
-</script>
+  <div class="container">
+    <p class="">Hello World!</p>
+    <p class="para2">Hello JQuery!</p>
+    <p class="">Hello JQuery!</p>
+    <button class="btn btn-default">click me</button>
+  </div>
+  <script>
+    // create by jieyuanwu2009@qq.com 0n 16/4/07
+    // 1.1 点击隐藏全部p元素
+    $(document).ready(function(){
+      //alert("文档加载完毕！");
+      $("p").click(function(){
+        $(this).hide();
+      })
+    });
+    // 1.2 点击隐藏某个p元素
+    $(document).ready(function(){
+      $('button').click(function(){
+        $('.para2').text('p元素被修改了！');
+      });
+    });
+    // 2.1 常用事件-点击事件
+    $(document).ready(function(){
+      //alert("gggg");
+      // $('button').click(function(){
+      //  $(this).hide();
+      // });
+      // $('button').dblclick(function(){
+      //  $(this).hide();
+      // });
+      // $('button').mouseenter(function(){
+      //  $(this).hide();
+      // });
+      // $('button').mouseleave(function(){
+      //  $(this).hide();
+      // });
+    });
+  </script>
 </body>
 </html>

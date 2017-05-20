@@ -20,6 +20,34 @@
 <div id="div1"></div>
 <div id="div2"></div>
 <div id="div3"></div>
-
+  <script>
+    /**
+   * @authors 吴结元 (jieyuanwu2009@qq.com)
+   * @date    2016-04-07 13:57:46
+   * @version $1.01$
+   **/
+  $(document).ready(function(){
+    $('#in').on("click",function(){
+      $("#div1").fadeIn(1000);
+      $("#div2").fadeIn(1000);
+      $("#div3").fadeIn(1000);
+    });
+    $('#out').on("click",function(){
+      $("#div1").fadeOut(1000);
+      $("#div2").fadeOut(1000);
+      $("#div3").fadeOut(1000);
+    });
+    $('#toggle').on("click",function(){
+      $("#div1").fadeToggle(1000);
+      $("#div2").fadeToggle(1000);
+      $("#div3").fadeToggle(1000);
+    });
+    $('#to').on("click",function(){
+      $("#div1").fadeTo(1000,0.5);
+      $("#div2").fadeTo(1000,0.7);
+      $("#div3").fadeTo(1000,0.3);
+    });
+  });
+  </script>
 </body>
 </html>

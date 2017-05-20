@@ -25,5 +25,30 @@
 		</ul>
 	</div>
 </div>
+<script>
+    // create by jieyuanwu2009@qq.com 0n 16/4/07
+    // 2.1 常用事件-事件之间目标与冒泡
+    $(document).ready(function(){
+      $("body").bind("click",bodyHandler);
+      $(".box1").bind("click",divHandler1);
+      $(".box1").bind("click",divHandler2);
+    });
+    function bodyHandler(event){
+      console.log(event);
+    }
+    function divHandler1(event){
+      console.log(event);
+      // event.stopPropagation();
+      event.stopImmediatePropagation();
+    }
+    function divHandler2(event){
+      conlog(event);
+      // event.stopPropagation();
+      event.stopImmediatePropagation();
+    }
+    function conlog(event){
+      console.log(event);
+    };
+  </script>
 </body>
 </html>

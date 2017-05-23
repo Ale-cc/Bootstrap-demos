@@ -19,5 +19,22 @@
 	    	</div>
     	</div>
     </div>
+	<script>
+		$(document).ready(function(){	
+			// $('a').parent().css({
+			// 	border: '3px solid #ffcc99',
+			// 	background: '#99cc99'
+			// });
+			// $('a').parents().css({
+			// 	border: '3px solid #cc3399',
+			// 	background: '#ffcc99'
+			// });
+
+			$('a').parentsUntil('#div1').css({
+				border: '3px solid #cc3399',
+				background: '#ffcc99'
+			});
+		});
+	</script>
 </body>
 </html>

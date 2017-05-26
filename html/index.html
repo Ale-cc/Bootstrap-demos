@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap实战</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="onepage">
+		<div class="onepage-bg" id="onepagebg"></div><!-- 背景 -->
+		<div class="container">
+			<nav class="navbar" role="navigation"> 
+			<!-- navbar-fixed-top/bottom 导航栏固定顶部、底部 navbar-inverse导航栏背景黑色  -->
+				<div class="container-fluid">
+					<div class="navbar-header" id="myLogo"> <!-- logo部分 -->
+						<a href="#" class="navbar-brand">
+							<span class="glyphicon glyphicon-send" ></span></a>
+					</div>	
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav" id="mytabs"> <!-- 导航栏选项卡 -->
+						<li class="active"><a href="">我的主页</a></li>
+						<li><a href="">擅长技能</a></li>
+						<li><a href="">项目经验</a></li>
+						<li><a href="">联系方式</a></li>
+					</ul>
+					
+				</div><!-- collapse ended -->
+			</div><!-- container-fluid ended -->
+		</nav>
+			<div class="row">
+				<div class="tile-text">
+					<div class="col-md-12 headfontsize">
+						<h1 class="head1content">Less Is More</h1>
+						<p class="btn-app-store">
+						<a href="" class="btn btn-default btn-lg" id="btnFont">简约之路</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="twopage">
+		<div class="twopage-text">
+			<h1 class="twopage-text-h1">简单的东西往往带给人们的是更多的享受&nbsp;&nbsp;<span class="glyphicon glyphicon-equalizer"></span></h1>
+		</div>
+		<div class="row">
+			<div class="twopage-content col-md-4"><a href="">
+					<img src="image/05.jpg" alt="" class="img-responsive">
+					<div class="classicon">
+						<h3>认真学习哦</h3>
+						<h1><strong>学习这个课程</strong></h1>
+					</div>
+				</a></div>
+			<div class="twopage-content col-md-4"><a href="">
+					<img src="image/06.jpg" alt="" class="img-responsive">
+					<div class="classicon">
+						<h3>认真学习哦</h3>
+						<h1><strong>学习这个课程</strong></h1>
+					</div>
+				</a></div>
+			<div class="twopage-content col-md-4"><a href="">
+					<img src="image/11.jpg" alt="" class="img-responsive">
+					<div class="classicon">
+						<h3>认真学习哦</h3>
+						<h1><strong>学习这个课程</strong></h1>
+					</div>
+				</a></div>
+		</div>
+	</div>
+	
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$("#mytabs a").click(function(e){
+		e.preventDefault();
+		$(this).tab("show");
+	})
+</script>
+</body>
+</html>

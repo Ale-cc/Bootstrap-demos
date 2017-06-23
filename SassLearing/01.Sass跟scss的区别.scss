@@ -1,0 +1,32 @@
+//welcome to imooc learn Sass
+//Sass语法
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333
+
+body
+    font: 100% $font-stack
+    color: $primary-color
+
+//Scss语法
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body{
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+
+//Sass 和 SCSS 其实是同一种东西，我们平时都称之为 Sass，两者之间不同之处有以下两点：
+
+//文件扩展名不同，Sass 是以“.sass”后缀为扩展名，而 SCSS 是以“.scss”后缀为扩展名
+//语法书写方式不同，Sass 是以严格的缩进式语法规则来书写，不带大括号({})和分号(;)，而 SCSS 的语法书写和我们的 CSS 语法书写方式非常类似。
+
+
+//以下为本节活动任务 scss写法
+$body_height: 200px;
+$body_width: 300px;
+
+body{
+    width: $body_width;
+    height: $body_height;
+}

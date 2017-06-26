@@ -6,7 +6,7 @@
 <title>jQuery效果  </title>
 <link rel="stylesheet" href="">
 <script src=../"js/jquery-1.11.3.min.js"></script>
-<script src="../js/move.js"></script>
+<!--<script src="../js/move.js"></script>-->
 <style>
 	.flipshow,.content,.fliphide,.fliptoggle{
 		padding:10px;
@@ -29,5 +29,25 @@
     		<h1>Hello World!</h1>
     	</div>
     </div>
+	<script>
+		/**
+		* move.js
+		* @authors Your Name (you@example.org)
+		* @date    2016-04-08 09:52:03
+		* @version $Id$
+		*/
+		$(document).ready(function() {
+			$('.flipshow').click(function() {
+				$('.content').slideDown('1000');
+			});
+			$('.fliphide').click(function() {
+				$('.content').slideUp('800');
+			});
+			$('.fliptoggle').click(function() {
+				$('.content').slideToggle('1000');	
+				
+			});
+		});
+	</script>
 </body>
 </html>

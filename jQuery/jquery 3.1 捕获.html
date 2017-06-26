@@ -6,7 +6,7 @@
 <title>jQuery效果  HTML捕获</title>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <script src="../js/jquery-1.11.3.min.js"></script>
-<script src="../js/buhuo.js"></script>
+<!--<script src="../js/buhuo.js"></script>-->
 <style>
 	.content{
 		padding:20px;
@@ -21,7 +21,30 @@
     	<p><input type="text" name="" id="it" value="jikexueyuan"></p>
     	<p><a href="https://www.baidu.com" id="aid">百度一下你就知道</a></p>
     	<button class="btn btn-default" id="btn2">点击2</button>
-
     </div>
+	<script>
+		/**
+		* 
+		* @authors Your Name (you@example.org)
+		* @date    2016-04-08 23:15:16
+		* @version $Id$
+		*/
+
+		$(document).ready(function() {
+			// $('#btn1').click(function() {
+			// 	alert("text:"+$('#text').text());
+			// });
+			// $('#btn1').click(function() {
+			// 	alert("text:"+$('#text').html());
+			// });
+			$('#btn1').click(function() {
+				alert("text:"+$('#it').val());
+			});
+			$('#btn2').click(function() {
+				// alert("text:"+$('#aid').attr("href"));
+				alert("text:"+$('#aid').attr("id"));
+			});
+		});
+	</script>
 </body>
 </html>

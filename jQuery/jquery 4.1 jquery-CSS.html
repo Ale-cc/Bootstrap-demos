@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/JQ-CSS.css">
 <script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/jQ-CSS.js"></script>
+<!--<script src="js/jQ-CSS.js"></script>-->
 </head>
 <body>
     <div class="container">
@@ -17,5 +17,46 @@
         <!-- jquery css样式2 -->
         <div class="div1"></div>
     </div>
+    <script>
+        /**
+        * 
+        * @authors Your Name (you@example.org)
+        * @date    2016-04-10 17:51:55
+        * @version $Id$
+        **/
+         $(document).ready(function(){
+         	$('.box1').css({
+         		width: '200px',
+         		height: '200px',
+         		background:'#99cc99',
+         		border:'1px solid orange'
+         	});
+         });
+
+        $(document).ready(function(){
+             $('.box1').css({
+             	width: '200px',
+             	height: '200px',
+             	background:'#99cc99',
+             	border:'1px solid orange'
+             });
+
+             $('#box1').addClass('style1');
+             $('#box1').addClass('style1');
+             $('#box1').click(function() {
+             	 $(this).removeClass('style2');
+             	$(this).toggleClass('style2');
+             });
+        })
+
+         //二部分 css盒子
+        $(document).ready(function(){
+             alert($('.box1').height());
+             alert($('.div1').height());
+             alert($('.box1').innerHeight());
+            alert($('#box1').outerHeight());
+        });
+        
+    </script>
 </body>
 </html>

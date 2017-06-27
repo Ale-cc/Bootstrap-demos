@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-06-23 15:47:00
+ * @version $Id$
+ */
+
+nav{
+    ul{
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+    
+    li{
+        display: inline-block;
+    }
+    
+    a{
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        & em{
+            font-weight: normal;
+        }
+    }
+    span{
+        display: inline-block;
+        padding: 2em;
+    }
+}
+
+//在编译的时候带上参数“ --style nested”:
+//sass --watch test.scss:test.css --style nested

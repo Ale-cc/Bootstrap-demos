@@ -1,0 +1,28 @@
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-06-23 15:47:00
+ * @version $Id$
+ */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+nav a em {
+  font-weight: normal;
+}
+nav span {
+  display: inline-block;
+  padding: 2em;
+}
+
+/*# sourceMappingURL=test3-1.css.map */

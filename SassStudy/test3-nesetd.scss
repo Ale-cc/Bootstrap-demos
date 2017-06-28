@@ -31,5 +31,8 @@ nav{
     }
 }
 
-//在编译的时候带上参数“ --style nested”:
+//3.1在编译的时候带上参数“ --style nested”:
+//sass --watch test.scss:test.css --style nested
+
+//3.2在编译的时候带上参数“ --style expanded(大括号另起一行):
 //sass --watch test.scss:test.css --style nested

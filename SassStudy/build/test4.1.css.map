@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA;;;;;GAKG;AAMH,MAAM;EACL,KAAK,EALO,IAAI;;;AAUhB,IAAC;EACA,KAAK,EAFE,GAAG;;;AAMZ,IAAI;EACH,KAAK,EAAE,MAAM;EACb,UAAU,EAfE,OAAO",
+"sources": ["../test4-defaultVar_globalVar.scss"],
+"names": [],
+"file": "test4.1.css"
+}

@@ -8,7 +8,7 @@
 
 $font_color: blue !default;
 //定义全局变量(在选择器、函数、混合宏...的外面定义的变量为全局变量)
-// $body_color: #fff0b0 !default;
+$body_color: #fff0b0 !global;
 
 .block{
 	color: $font_color; //调用全局变量
@@ -23,4 +23,10 @@ em{
 
 span{
 	color: orange; //调用全局变量
+	background: $body_color; //调用全局变量
 }
+
+
+///  -- 简单区分全局变量和局部变量
+//!default 你说啥就是啥
+//!golbal 我说啥就是啥

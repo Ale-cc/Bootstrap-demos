@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Ale-cc (you@example.org)
+ * @date    2017-07-03 23:27:00
+ * @version 1.0.1
+ */
+
+$font_color: blue !default;
+//定义全局变量(在选择器、函数、混合宏...的外面定义的变量为全局变量)
+// $body_color: #fff0b0 !default;
+
+.block{
+	color: $font_color; //调用全局变量
+}
+
+em{
+	$color: red; //定义局部变量
+	a{
+		color: $color; //调用局部变量
+	}
+}
+
+span{
+	color: orange; //调用全局变量
+}

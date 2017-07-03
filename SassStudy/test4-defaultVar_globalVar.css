@@ -1,0 +1,17 @@
+/**
+ * 
+ * @authors Ale-cc (you@example.org)
+ * @date    2017-07-03 23:27:00
+ * @version 1.0.1
+ */
+.block {
+  color: blue;
+}
+
+em a {
+  color: red;
+}
+
+span {
+  color: orange;
+}

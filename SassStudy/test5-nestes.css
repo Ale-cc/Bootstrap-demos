@@ -1,0 +1,12 @@
+/**
+ * 
+ * @authors Ale-cc (you@example.org)
+ * @date    2017-07-03 23:27:00
+ * @version 1.0.1
+ */
+.box1 {
+  border-top: 1px solid #eee;
+  border-left: 1px solid #dedede;
+  font-size: 12px;
+  font-weight: bold;
+}

@@ -1,8 +1,10 @@
+@charset "UTF-8";
 /**
  * 
  * @authors Ale-cc (you@example.org)
- * @date    2017-07-03 23:27:00
+ * @date    2017-07-06 23:47:00
  * @version 1.0.1
+ * @description [description] 嵌套属性
  */
 .box1 {
   border-top: 1px solid #eee;

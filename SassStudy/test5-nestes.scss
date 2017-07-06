@@ -7,10 +7,11 @@
  * @description [description] 嵌套属性
  */
 
-.box1{
+.box1 {
     border: {
-        top: 1px solid #eee;
-        left: 1px solid #dedede;
+        width: 1px;                
+        top: solid #eee;
+        left: solid #dedede;
     }
     font: {
         size: 12px;

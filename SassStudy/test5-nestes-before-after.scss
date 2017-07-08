@@ -5,10 +5,11 @@
  * @authors Ale-cc (you@example.org)
  * @date    2017-07-06 23:47:00
  * @version 1.0.1
- * @description [description] 嵌套属性
+ * @description [description] 嵌套-伪类嵌套
  */
 
 .clearfix {
+    *zoom: 1;
     &:before,
     &:after {
         content: "";
@@ -21,4 +22,4 @@
 }
 
 //Sass 中还提供属性嵌套，CSS 有一些属性前缀相同，只是后缀不一样，比如：border-top/border-right，与这个类似的还有 margin、padding、font 等属性。
-//Failed to load sass-lint library. Please install sass-lint in your workspace folder using 'npm
+//其实伪类嵌套和属性嵌套非常类似，只不过他需要借助`&`符号一起配合使用

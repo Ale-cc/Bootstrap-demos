@@ -4,8 +4,12 @@
  * @authors Ale-cc (you@example.org)
  * @date    2017-07-06 23:47:00
  * @version 1.0.1
- * @description [description] 嵌套属性
+ * @description [description] 嵌套-伪类嵌套
  */
+.clearfix {
+  *zoom: 1;
+}
+
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;

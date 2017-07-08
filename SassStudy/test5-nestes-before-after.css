@@ -8,6 +8,7 @@
  */
 .clearfix {
   *zoom: 1;
+  /*IE/7/6*/
 }
 
 .clearfix:before, .clearfix:after {

@@ -9,7 +9,7 @@
  */
 
 .clearfix {
-    *zoom: 1;
+    *zoom: 1; /*IE/7/6*/
     &:before,
     &:after {
         content: "";

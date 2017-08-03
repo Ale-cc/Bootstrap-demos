@@ -1,0 +1,13 @@
+// set default value of @mixin
+@mixin border-radius($radius: 3px){
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.box {
+    @include border-radius;
+}
+
+.pen{
+    @include border-radius(.5em);
+}

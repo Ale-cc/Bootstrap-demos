@@ -1,0 +1,167 @@
+  // 自定义过渡效果
+  .sliderToggle-enter-active,
+  .sliderToggle-leave-active {
+    transition: all 0.5s linear;
+    height: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .sliderToggle-enter,
+  .sliderToggle-leave-to {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  // 侧边栏全局样式
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 68px;
+    min-height: 100%;
+    z-index: 810;
+    transition: all 0.3s linear;
+    background-color: #222d32;
+    .sidebar-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      span {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: #8aa4af;
+        &:hover {
+          color: #fff;
+        }
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      >li {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        &.active {
+          color: #fff;
+        }
+        >a {
+          border-left: 3px solid transparent;
+          position: relative;
+          padding: 15px 5px 15px 19px;
+          display: block;
+          font-size: 14px;
+          >i {
+            padding-right: 4px;
+          }
+          .trangle {
+            float: right;
+            padding-right: 10px;
+          }
+        }
+        &.active {
+          >a {
+            border-left: 3px solid #3c8dbc;
+            color: #fff;
+          }
+        }
+        >.tree-menu {
+          margin: 0 1px;
+          background: #2c3b41;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          .tree-menu {
+            padding-left: 20px;
+          }
+          >li {
+            margin: 0;
+            &.active {
+              >a {
+                border-left: 3px solid #3c8dbc;
+                color: #fff;
+              }
+            }
+            >a {
+              padding: 15px 10px 15px 40px;
+              display: block;
+              font-size: 14px;
+              border-left: 3px solid transparent;
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &.expand {
+      width: 230px;
+    }
+
+    &.collapse {
+      width: 50px;
+      .sidebar-menu {
+        >li {
+          >a {
+            padding: 15px 5px 15px 15px;
+            span,
+            i:last-child {
+              display: none;
+            }
+          }
+          .tree-menu {
+            display: none;
+          }
+          &:hover {
+            >a {
+              display: block;
+              span {
+                display: block;
+                position: absolute;
+                left: 47px;
+                width: 153px;
+                padding: 15px 5px 15px 19px;
+                background-color: #222d32;
+                color: #fff;
+                width: 177px;
+                top: 0;
+                border-radius: 0 5px 0 0;
+              }
+              i:last-child {
+                display: inline-block;
+                position: absolute;
+                right: -165px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #fff;
+              }
+            }
+            >.tree-menu {
+              display: block;
+              position: absolute;
+              left: 47px;
+              width: 180px;
+              background-color: #222d32;
+              color: #fff;
+              top: 46px;
+              width: 180px;
+              border-radius: 0 0 5px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
